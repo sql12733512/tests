@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+::selection {
+    background: #4f5362; 
+     color: #fff; 
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+nav {
+  display: block;
+}
+
+
+
+
+body {
+  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #3e3f3a;
+  background-color: #ffffff;
+
+}
+
+ul, li {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+ul {
+visibility: visible;
+opacity: 1;
+}
+
+.ts-sidebar {
+background: #2c3136;
+max-height: 0;
+transition: max-height 0.3s;
+/*margin-top: 7.4%;*/
+overflow: hidden;
+position: fixed;
+
+width: 100%;
+bottom: 0;
+top: 13.5%;
+right: 1px;
+/*overflow-y: auto;*/
+}
+.ts-sidebar {
+width: 100%;
+background: #25292a;
+border: none;
+padding: 5px 15px;
+color: #fff;
+max-height: 100%;
+ /* bottom: 0;*/
+}
+
+.ts-sidebar-menu .ts-label {
+color: #000;
+font-weight: bold;
+padding: 8px 15px;
+text-transform: uppercase;
+font-size: 10px;
+letter-spacing: 3px;
+/*margin-top: 10px;*/
+}
+.ts-sidebar-menu a {
+display: block;
+text-decoration: none;
+padding: 12px 15px;
+color: #fff;
+}
+/*.ts-sidebar-menu li {
+position: relative;
+}*/
+.ts-sidebar-menu li i {
+color: #585c64;
+margin-right: 10px;
+}
+.ts-sidebar-menu li ul {
+display: block;
+background: rgba(255, 0, 0, 0.12);
+background: rgba(0, 0, 0, 0.32);
+max-height: 0;
+overflow: hidden;
+transition: all 0.3s ease;
+}
+/*.ts-main-content */.ts-sidebar {
+  text-align: right;
+  width: 20%;
+  /*float: right;*/
+}
+
+@media only screen and (max-width: 992px) {
+  .ts-sidebar {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    top: 12%;
+    width: 100%;
+    max-height: 8%;
+    z-index: 1;
+    right: 1px;
+  }
+  .ts-sidebar:hover{
+    max-height: 72%;
+  }
+nav ul li{
+    
+    display: block;
+    text-align: center;
+  }
+  }
+ 
+    @media only screen and (max-width: 360px) {
+      
+      .ts-sidebar {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        top: 11%;
+        width: 100%;
+        max-height: 7%;
+        z-index: 1;
+        right: 1px;
+      }
+      .ts-sidebar:hover{
+        max-height: 40%;
+      }
+       ul,li{
+        
+        display: block;
+        text-align: center;
+      }
+      }

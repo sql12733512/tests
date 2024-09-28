@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    background: #4f5362; 
+     color: #fff; 
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    padding: auto;
+    margin: auto;
+   
+}
+.contuener{
+    width: 100%;
+    text-align: center;
+    
+    margin: auto;
+    background-color: rgb(180, 132, 69);
+    
+    
+}
+.header{
+    min-height: 83px;
+    background-color: darkcyan;
+    overflow: hidden;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    top: 0px;
+    right: 1px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    
+}
+.sp-1{
+    color: #f10808;
+    font-size: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+.p_1{
+    color: #000000;
+    font-size: 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.ts-profile-nav {
+    margin-top: -60px;
+    float: right;
+    display: flex;
+}
+
+.ts-avatar {
+    border-radius: 50%;
+    height: 34px;
+    margin: -6px auto;
+    /* margin-right: 10px;*/
+}
+.ts-account{
+/*border-radius: 50%; */
+    height: 66px;
+    /* margin: -6px auto; */
+    background-color: #088;
+}
+.ts-account:hover{
+    height: 125px;
+    z-index: 3;
+}
+.social-icon-link {
+    background: #088;
+    color: #ffffff;
+    border-radius: 220px;
+    text-decoration: none;
+    /* font-size: 30px; */
+    display: block;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    text-transform: none;
+    font-size: 18px;
+}
+.social-icon{
+    text-decoration: none;
+    font-size: 80px;
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 992px) {
+    
+    .ts-profile-nav {
+      margin-top: -21px;
+      float: right;
+      display: flex;
+  }
+  .p_1 {
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+    .sp-1 {
+      margin-right: 36px;
+      color: #f10808;
+      font-size: 18px;
+      cursor: pointer;
+      font-weight: bold;
+  }
+    }
